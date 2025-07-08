@@ -15,6 +15,6 @@
 import {sum} from "./airthmetic.mjs"
 
 console.log(sum(10, 20));
-console.log(sum(23,28));
+console.log(sum(23,30));
 
 
