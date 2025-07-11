@@ -16,3 +16,5 @@ interface.question("Enter first number: ", (num1) => {
     console.log(sum);
   });
 });
+
+// Can use to build command line applications
