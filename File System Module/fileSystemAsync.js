@@ -1,13 +1,13 @@
 const fs = require("fs");
 
 // Read data
-// fs.readFile("data.txt", (err, data) => {
-//   if (err) {
-//     console.log(err);
-//   } else {
-//     console.log(data.toString());
-//   }
-// });
+fs.readFile("data.txt", (err, data) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(data.toString());
+  }
+});
 
 // Write data
 fs.writeFile("employee.txt", "New Employee", (err) => {
