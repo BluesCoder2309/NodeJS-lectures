@@ -1,7 +1,10 @@
+// Creating POST request in NodeJS
+
 import http from "http";
 
 const server = http.createServer((req, res) => {
   if (req.method == "POST") {
+    console.log(req.body);
     // expecting data from the client.
     let body = "";
 
@@ -13,9 +16,10 @@ const server = http.createServer((req, res) => {
       console.log(body);
       res.end("Data is received");
     });
+  } else {
+    console.log("Function ends here");
+    res.end("Welcome to NodeJS Server");
   }
-
-  res.end("Welcome to NodeJS Server");
 });
 
 server.listen(3100);
